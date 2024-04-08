@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/709d5695de.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="logowhitepng.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+	   <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+		<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>	
+        </ul>
+		<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <h1 class="animated-text-1">Hello!</h1>
+        <h2 class="animated-text-2">I'm <span>Avishek Pal</span></h2>
+    
+        <p class="animated-text-3">"Scientists investigate that which already is,<br>Engineers create that which has never been."</p>
+      </div>
+	
+	<div class="header-text3">
+	<h1 class="box">Engineer / Developer / Designer</h1>
+	  </div>
+
+    </div>
+  </div>
+
+  <!--------------------------------------- About Section -------------------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="myimg2.jpg" alt="myimg2.jpg">
+	  <span class="circle-spin"></span>
+        </div>
+
+        
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="para-new1"><span>H</span>ello,I'm Avishek Pal, a passionate coding enthusiast, developer from Kolkata, West Bengal, India.</p>
+          <p class="para-new2"><br>Now I am 20 and an Undergraduate of Civil Engineering at Indian Institute of Engineering Science and Technology, Shibpur. Currently, I'm on a fascinating journey through the realms of coding and engineering. Passions: Coding, Playing cricket, Art etc. My inspirational figures are The Great Dr. APJ Abdul Kalam and The G.O.A.T Mahendra Singh Dhoni.<br>Favorite Quote:<span>"Money is not everything, but everything needs money"</span></p>
+
+
+	          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              <li><span>Development</span><br>Web app development/App interfaces</li>
+              <li><span>Coding Languages</span><br>C, C++, HTML, CSS, JS</li>
+              <li><span>Others</span><br>Auto CAD<br>Adobe Photoshop<br>Adobe Premierpro<br>Adobe Illustrator</li>
+            </ul>
+          </div>
+          
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2020</span><br>My journey began in West Bengal, Graduating with flying colors from the West Bengal board with 96.6% in secondary Examination</li>
+              <li><span>2022</span><br>At the same board, I passed my higher secondary examination with 94.5% in Science stream PCMB</li>
+              <li><span>2023-2027</span><br>After achieving a 97th percentile in JEE Main, I secured admission to IIEST, Shibpur.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Active Member @EDC</span><br>During my first year at IIEST, Shibpur, I became a member of the Entrepreneurship Development Cell, IIEST Shibpur. Also, I participated in the EcoFusion a PPT presentation competition and proudly secured the third position.</li>
+              <li><span>SOCCE, IIEST Shibpur</span><br>As a member of SOOCE (Society of Civil Engineers) at IIEST, Shibpur, I actively contributed by managing events and creating numerous posters as a graphics designer. Moreover, I played an integral role as an active member of the video editing and content writing team.</li>
+              <li><span>Other</span><br>Solved 150+ coding questions<br>Built 5+ websites<br>Made 25+ different types of posters</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--------------------services-------------------->
+<div id="services">
+ 	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+
+	<div>
+		<i class="fa-solid fa-code"></i>
+		<h2>Web Design</h2>
+		<p>With a passion for innovative web design, I've crafted over eight (8+) captivating websites that blend style and functionality seamlessly. From sleek e-commerce platforms to engaging personal blogs, each project showcases my expertise in user-centric design and responsive development. Whether it's creating intuitive navigation or optimizing for SEO, I ensure every site delivers a standout user experience. Explore my diverse portfolio to witness how I transform concepts into visually stunning digital realities.</P>
+		<a href="#">Learn more</a>
+	</div>
+
+	<div>
+		<i class="fa-solid fa-crop"></i>
+		<h2>UI/UX Design</h2>
+		<p>As a newcomer to this dynamic field, I bring fresh perspectives and a hunger for innovation to every project. While my journey has just begun, I've already embarked on crafting intuitive interfaces and engaging user experiences. Dive into my evolving collection to witness the fusion of creativity and functionality, aimed at enhancing user satisfaction and driving results. Together, let's explore the possibilities of UI/UX design and transform your digital aspirations into captivating realities.</P>
+		<a href="#">Learn more</a>
+	</div>
+
+	<div>
+		<i class="fa-brands fa-app-store"></i>
+		<h2>APP Design</h2>
+		<p>"Anticipating the next frontier in digital innovation, I'm gearing up to venture into the realm of app development. Armed with a thirst for knowledge and a penchant for problem-solving, I'm diligently honing my skills to craft immersive and impactful mobile experiences. While my journey in app development has yet to unfold, my commitment to excellence remains unwavering. Stay tuned as I embark on this exciting new chapter, driven by a passion to create cutting-edge solutions that resonate with users worldwide.</P>
+		<a href="#">Learn more</a>
+	</div>
+	</div>
+	</div>
+	</div>
+
+<!-----------------------portfolio--------------------------->
+<div id="portfolio">
+<div class="container">
+	<h1 class="sub-tittle">My Work</h1>
+	<div class="work-list">
+	<div class="work">
+	   <img src="wimg1.jpg">
+		<div class="layer">
+		<h3>Social Media App</h3>
+		<p>Downlod it from play store.</p>
+		<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+		</div>
+
+	</div>  
+	
+	<div class="work">
+	   <img src="wimg2.jpg">
+		<div class="layer">
+		<h3>AutoCAD Design</h3>
+		<p>many creative and professional design designed by autoCAD</p>
+		<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+		</div>
+	</div>  
+
+	<div class="work">
+	   <img src="wimg3.jpg">
+		<div class="layer">
+		<h3>Arduino</h3>
+		<p>make many projects using ardunio</p>
+		<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+		</div>
+	</div> 
+ </div>
+
+	<a href="#" class="btn">More About Me</a>
+
+</div>
+</div>
+
+<!-------------------------------contact-------------------------------------->
+	<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i>avishekpal678@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 89181 07347</p>
+
+                <div class="social-links">
+
+			<a href="https://www.facebook.com/avishek.paul678?mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/avishekpal678?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/avishek_paul678/?utm_source=qr&r=nametag"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+			
+			<div>
+    <a href="myres.pdf" id="downloadLink" class="btn btn2">Download CV</a>
+</div>
+		
+
+            </div>
+
+
+            <div class="contact-right">
+		<form name="submit-to-google-sheet">
+			<input type="text" name="Name" placeholder="Your Name" required>
+			<input type="email" name="Email" placeholder="Your Email" required>
+			<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+			<button type="submit" class="btn btn2">Submit</button>
+ 
+			
+		<form>
+
+	<span id="msg"></span>
+
+		</div>
+		</div>
+        </div>
+    </div>
+
+<!-- Footer Top ------------------------------------------------>
+	<section id="footer-top" class="section">
+		<div class="container">
+			<div class="row">
+				<!-- Single Widget -->
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="newslatter">
+						<h2><span>Signup</span>Newslatter</h2>
+						<p>You can subcribe my website so that whenever I updated new information on my website, You
+							will be received a upgratation mail.As a result, There will be a better connectivity between us.</p>
+					</div>
+					<script>var subscribe = false;</script>
+					<iframe name="subcribers_iframe" style="display:none;"
+						onload="if(subscribe) {window.location='index.html';}"></iframe>
+					<form class="news-form" method="post" action="#"
+					target="subcribers_iframe" onsubmit="return validated(); ">
+						<input type="email" placeholder="Type your email" name="entry.1280810468" id="subscribe_email">
+						<button type="submit" class="button primary"><i class="fa-solid fa-paper-plane"></i></button>
+					</form>
+				</div>
+				<!--/ End Single Widget -->
+			</div>
+		</div>
+	</section>
+<!--/ End footer Top -----------------------------------> 
+
+
+
+<!-------------------copy---------------------------------------->
+<div class="copyright">
+<p>©️ Copyright 2024 Avishek. Design & Developed By <i class="fa-solid fa-heart"></i> Avishek</p>
+</div>
+
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+ <script>
+	var sidemeu = document.getElementById("sidemenu");
+	
+	function openmenu(){
+		sidemeu.style.right = "0";
+		}
+	
+	function closemenu(){
+		sidemeu.style.right = "-200px";
+		}
+
+ </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzpksbdxdI2nwwQVTEA4EfmurS2d_D2yyqXsvsHJ3iEdoAAYglsfM5PtCu3OIu3wmlpeQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+	msg.innerHTML = "Message Sent Successfully"
+	setTimeout(function(){
+		msg.innerHTML = ""
+},5000)
+form.reset()
+})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+<script>
+    document.getElementById("downloadLink").addEventListener("click", function(event) {
+        // Prevent default link behavior
+        event.preventDefault();
+        
+        // Get the href attribute of the download link
+        var downloadUrl = this.getAttribute("href");
+        
+        // Create a hidden anchor element
+        var anchor = document.createElement("a");
+        anchor.style.display = "none";
+        anchor.href = downloadUrl;
+        anchor.download = "myres.pdf"; // Specify the filename
+        
+        // Append the anchor to the body
+        document.body.appendChild(anchor);
+        
+        // Trigger a click event on the anchor
+        anchor.click();
+        
+        // Remove the anchor from the body
+        document.body.removeChild(anchor);
+    });
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+    

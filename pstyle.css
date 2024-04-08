@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+}
+
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 140px;
+  /* Apply animation to the logo */
+  animation: slideInLogo 3s ease forwards;
+}
+
+@keyframes slideInLogo {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #743089;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+
+.header-text {
+  margin-top: 13%;
+  font-size: 20px;
+text-align: center;
+}
+
+.header-text h2 {
+  font-size: 40px;
+  margin-top: 15px;
+   text-align: center;
+}
+
+/* Animation for "welcome" */
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animated-text-1 {
+  animation: slideIn 1s ease forwards;
+}
+
+/* Animation for "here is my projects" */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animated-text-2 {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animated-text-3-container {
+  display: inline-block;
+  text-align: center; /* Center-align the text */
+}
+
+/* Define typing animation */
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Define blinking cursor animation */
+@keyframes blink {
+  50% { border-right-color: transparent; }
+}
+
+.animated-text-3 {
+  margin-top: 30px;
+  overflow: hidden; /* Ensures text overflow is hidden */
+  border-right: 3px solid #743089; /* Cursor line */
+  white-space: nowrap; /* Ensures text doesn't wrap */
+  animation: typing 5s steps(72) forwards, /* Typing animation */
+             blink 0.8s step-end infinite; /* Blinking cursor animation */
+}
+
+
+.header-text h2 span {
+  color: #743089;
+}
+
+.header-text h2 span {
+  color: #743089;
+}
+
+
+.header-text h2 span{
+color: #743089;
+}
+
+
+.header-text3{
+	margin: 85px 0 10px;
+}
+
+/*--------------------------boxes-------------------------*/
+
+#services {
+  padding: 30px 0;
+}
+
+
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 100px;
+}
+
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 200px;
+  transition: background 0.5s, transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.services-list div p {
+  text-align: center;
+  margin-bottom: 20px; /* Adjusted margin */
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+}
+
+.services-list div a i{
+  margin-bottom: 20px;
+  font-size: 12px;
+
+}
+
+
+
+.services-list div:hover {
+  background: #743089;
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #743089;
+}
+
+
+
+
+
+
+
+/*--------------------------------css for small screen---------------------------------*/
+
+nav .fa-solid{
+display:none;
+}
+
+@media only screen and (max-width: 600px){
+
+
+
+	.header-text h1{
+	font-size:30px;
+}
+
+.header-text h2{
+	font-size:30px;
+}
+
+.header-text p{
+	
+	font-size:9px;
+}
+
+
+.header-text3{
+	margin-top: 15px;
+	font-size:6px;
+}
+
+nav .fa-solid{
+display:block;
+font-size:25px;
+}
+
+nav ul{
+background: #743089;
+position: fixed;
+top:0;
+right: -200px;
+width: 200px;
+height : 100vh;
+padding-top:50px;
+z-index:2;
+transition: right 0.5s;
+}
+
+nav ul li{
+display:: block;
+margin: 25px;
+}
+
+nav ul .fa-solid{
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	cursor:pointer;
+}
+
+
+.tab-links{
+	font-size: 16px;
+	margin-right: 20px;
+}
+
+.contact-left, .contact-right{
+flex-basis: 100%;
+
+}
+
+.copyright{
+	font-size: 10px;
+}
+
+}
+
+
+
+
