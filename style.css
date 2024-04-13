@@ -692,15 +692,10 @@ nav ul .fa-solid{
   border: .2rem solid #743089;
 }
 
-.about-col-1 .circle-spin {
-  position: absolute;
-  top: -19%;
-   left: 10%;
-/* Adjust left positioning for concentric circles */
-  width: 80%; /* Adjust width to match the width of the image */
-  height: 120%;
-  border-radius: 50%; /* Maintain circularity for animated border lines */
-}
+  .about-col-1 .circle-spin {
+    display: none; /* Disabling  for small screens */
+  }
+
 
 
 
