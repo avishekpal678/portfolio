@@ -969,11 +969,11 @@ margin-right: 20px;
 
     /* ---------------- Typography Fixes ---------------- */
     .header-text h1 { 
-        font-size: 30px; 
+        font-size: 34px; 
     }
     
     .header-text h2 { 
-        font-size: 42px; 
+        font-size: 30px; 
         margin-bottom: 15px; 
     }
     
@@ -982,7 +982,7 @@ margin-right: 20px;
     }
 
     .header-text p { 
-        font-size: 14px; 
+        font-size: 13px; 
         margin-top: 45px;
         margin-bottom: 25px;
         padding: 0 10px;
